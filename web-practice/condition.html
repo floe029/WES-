@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Js-prac</title>
+</head>
+<script>
+          function ageVerify() {
+                    const age = Number(document.getElementById("age").value);
+                    if ( age>=18 && age<=64) { document.getElementById('result').innerHTML = "You are old enough to drive";}
+                    else if (age>=65) {document.getElementById('result').innerHTML = "You are too old to drive";}
+                    else { document.getE  lementById('result').innerHTML = "You arenot old enough";}
+          }
+</script>
+
+<body>
+          <input type="number" id="age" placeholder="enter your age">
+          <p id="result"></p><br>
+          <button onclick="ageVerify()" type="button">Submit</button>
+</body>
+
+</html>
+
+<body>
